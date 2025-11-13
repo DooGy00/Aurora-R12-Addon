@@ -1,0 +1,11 @@
+{
+    "id": "alienware_r12_custom",
+    "name": "Alienware Aurora R12 Custom",
+    "author": "Chalo",
+    "version": "1.0.0",
+    "devices": [
+        "device.json"
+    ],
+    "scripts": [],
+    "dependencies": []
+}
