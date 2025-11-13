@@ -1,0 +1,9 @@
+{
+  "format_version": 1,
+  "addons": [
+    {
+      "id": "alienware_r12_custom",
+      "path": "./"
+    }
+  ]
+}
