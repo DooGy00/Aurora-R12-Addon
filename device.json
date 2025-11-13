@@ -1,19 +1,10 @@
 {
-    "id": "alienware_aurora_r12",
-    "name": "Alienware Aurora R12 (Custom)",
-    "type": "external",
-    "vendor": "Dell",
-    "product": "Aurora R12",
-
-    "zones": [
-        { "id": 0, "name": "Power Button", "type": "single" },
-        { "id": 1, "name": "Inner Ring",   "type": "single" },
-        { "id": 2, "name": "Outer Ring",   "type": "single" },
-        { "id": 3, "name": "Side Logo",    "type": "single" }
-    ],
-
-    "controller": {
-        "type": "script",
-        "script": "alienrgb_sync.ps1"
+  "device_name": "Aurora R12 Lighting",
+  "zones": [
+    {
+      "name": "Chassis RGB",
+      "type": "linear",
+      "leds": 1
     }
+  ]
 }
