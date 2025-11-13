@@ -1,16 +1,19 @@
 {
+    "id": "alienware_aurora_r12",
     "name": "Alienware Aurora R12 (Custom)",
-    "type": "custom",
-    "update_interval_ms": 60,
+    "type": "external",
+    "vendor": "Dell",
+    "product": "Aurora R12",
 
-    "lights": [
-        { "name": "Power Button", "id": 0 },
-        { "name": "Inner Ring", "id": 1 },
-        { "name": "Outer Ring", "id": 2 },
-        { "name": "Side Logo", "id": 3 }
+    "zones": [
+        { "id": 0, "name": "Power Button", "type": "single" },
+        { "id": 1, "name": "Inner Ring",   "type": "single" },
+        { "id": 2, "name": "Outer Ring",   "type": "single" },
+        { "id": 3, "name": "Side Logo",    "type": "single" }
     ],
 
-    "on_color_change": {
-        "command": "powershell.exe -ExecutionPolicy Bypass -File \"C:\\AlienwareR12-SRG\\alienrgb_sync.ps1\" {r} {g} {b}"
+    "controller": {
+        "type": "script",
+        "script": "alienrgb_sync.ps1"
     }
 }
