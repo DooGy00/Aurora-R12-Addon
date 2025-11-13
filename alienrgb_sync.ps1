@@ -1,14 +1,14 @@
 param(
-    [int]$r,
-    [int]$g,
-    [int]$b
+    [string]$color
 )
 
-$cli = "C:\Users\drcha\AppData\Local\AlienFX Tools\alienfx-cli.exe"
+# Convert HEX (RRGGBB) to decimal RGB
+$R = [Convert]::ToInt32($color.Substring(0,2),16)
+$G = [Convert]::ToInt32($color.Substring(2,2),16)
+$B = [Convert]::ToInt32($color.Substring(4,2),16)
 
-$hex = "{0:X2}{1:X2}{2:X2}" -f $r,$g,$b
+# Path to CLI
+$cli = "$env:LOCALAPPDATA\AlienFX Tools\alienfx-cli.exe"
 
-& $cli light -z 0 -c $hex
-& $cli light -z 1 -c $hex
-& $cli light -z 2 -c $hex
-& $cli light -z 3 -c $hex
+# Send color to entire device
+& $cli "setall=$R,$G,$B"
