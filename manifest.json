@@ -1,9 +1,9 @@
 {
-  "format_version": 1,
-  "addons": [
-    {
-      "id": "alienware_r12_custom",
-      "path": "./"
-    }
-  ]
+  "id": "aurora-r12-addon",
+  "name": "Alienware Aurora R12 (AW-ELC)",
+  "version": "1.0.0",
+  "author": "Chalo & ChatGPT",
+  "description": "Soporte completo para Alienware Aurora R12 mediante AlienFX APIv4.",
+  "device": "./device.json",
+  "entry": "./index.js"
 }
