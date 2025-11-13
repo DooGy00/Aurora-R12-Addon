@@ -1,11 +1,14 @@
 {
-    "id": "alienware_r12_custom",
-    "name": "Alienware Aurora R12 Custom",
-    "author": "Chalo",
-    "version": "1.0.0",
-    "devices": [
-        "device.json"
-    ],
-    "scripts": [],
-    "dependencies": []
+  "name": "Alienware Aurora R12",
+  "author": "Chalo",
+  "version": "1.0.0",
+  "devices": [
+    {
+      "type": "rgb",
+      "name": "Aurora R12 Lighting",
+      "device-class": "case",
+      "location": "internal",
+      "script": "alienfx_sync.ps1"
+    }
+  ]
 }
